@@ -42,7 +42,6 @@ def run_pipeline():
         to the segmentation IDs through the list in results['cell_id'].
     """
     dirpath = sys.argv[1]
-    
     filename = sys.argv[2]
     if dirpath != True or filename != True:
         print("path not found")
