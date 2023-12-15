@@ -1,44 +1,23 @@
-Python BioImage Analysis Tutorial
+BioImaging Test Workflow
 =================================
+Running BioImaging Analysis on Milton
 
-*originally created in 2016*    
-*updated and converted to a Jupyter notebook in 2017*    
-*updated and converted to python 3 in 2018*    
-*by Jonas Hartmann (Mayor group, University College London)*    
+## What is everything
 
-----
+- example_cells_output: This file consists of the images when the data gets preprocessed
+- example_data: This file consists of 2 publicly sourced images that are in .tiff format
+- ipynb_images: This file consists of images that are exhibited in the jupyter notebook
+- batch_processing_solution.py: Take an image input and process it to produce quantitative measurements results
+- image_analysis_tutorial_solution.ipynb: Jupyter notebook that can help determine thresholds and make sure everything is working as intended
 
-⚠️ Note that some of the materials in this tuorial are slightly out of date by now (2023), but recent feedback has shown that the tutorial is still very useful and approachable for many learners. I would like to create an updated and slightly extended version at some point, but academic pressures limit my ability to work on this, so we'll have to see how it goes... 🤞
+### First things first
+This tool is for analysing microscopy images that have been extracted to TIF. If the images are in other format, try converting file format or use another workflow.
 
-(Latest maintenance update: 17.02.2023, python 3.9.16 (basic Anaconda distro), with thanks to @Koushouu!)
-
------
-
-## Aims and Overview
-
-This tutorial teaches the basics of bio-image processing, segmentation and analysis in python. It integrates explanations and exercises in a (hopefully) self-explanatory fashion, enabling participants to build their own image analysis pipelines step by step.
-
-The tutorial uses single-cell segmentation of 2D confocal fluorescence microscopy images to illustrate key concepts from preprocessing to segmentation to (very basic) data analysis. It concludes with a small section on how to apply such a pipeline to multiple images at once (batch processing).
-
-Everything you need to know to get started can be found in the jupyter notebook `image_analysis_tutorial.ipynb`. To find out more about how to run these materials interactively, see the [Jupyter documentation](https://jupyter.readthedocs.io/en/latest/index.html).
-
-Note that this tutorial was part of a course aimed at people with basic knowledge of python. The course included introductory sessions/lectures on scientific python (in particular `numpy` and `matplotlib`) as well as on image analysis (see the slides in this repository). For those tackling this tutorial on their own, it is therefore recommended to first acquire basic scientific python knowledge elsewhere (e.g. at [python-course.eu](https://www.python-course.eu)).
-
-## Content Overview
-
-- Lecture
-  - Working with digital images
-    - Images as arrays of numbers
-    - Look-up tables (LUTs)
-    - Dimensions
-    - Bit-depth
-  - Image analysis pipelines
-    - Preprocessing: filters, kernels, convolution, background subtraction
-    - Foreground detection: thresholding, morphological operations
-    - Segmentation: labels, seeds, watershed
-    - Postprocessing: object filtering
-    - Making measurements
-
+### Setting up environment
+If you have not used conda on milton before, install it with
+```module load miniconda3
+conda init
+```
 - Tutorial
   - Importing Modules & Packages
   - Loading & Handling Image Data
