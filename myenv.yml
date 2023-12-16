@@ -1,0 +1,11 @@
+name: myenv
+channels:
+ - defaults
+dependencies:
+ - python=3.12.0
+ - pip
+ - pip:
+   - numpy
+   - matplotlib
+   - scikit-image
+   - scipy
