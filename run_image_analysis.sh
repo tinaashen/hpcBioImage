@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#SBATCH --job-name=image_analysis
+#SBATCH --output=result-%J.out
+#SBATCH --error=result-%J.err
+#SBATCH --time=01:00:00
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=4GB  # Increased memory allocation
+#SBATCH --partition=interactive
+
 # Usage: ./run_image_analysis.sh <image_file>
 
 # Absolute path to Python script
