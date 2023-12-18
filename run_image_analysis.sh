@@ -11,7 +11,7 @@
 # Usage: ./run_image_analysis.sh <image_file>
 
 # Absolute path to Python script
-PYTHON_SCRIPT="./batch_processing_solution.py"
+PYTHON_SCRIPT="./quantitative_analysis.py"
 
 # Directory containing the image – update this to your directory
 IMAGE_DIR="./example_data"
