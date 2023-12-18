@@ -13,7 +13,7 @@ Running BioImaging Analysis on Milton
 - ipynb_images: This file consists of images that are exhibited in the jupyter notebook
 
 
-### First things first
+## First things first
 
 This tool is for analysing microscopy images that have been extracted to TIF. If the images are in other format, try converting file format or use another workflow.
 
