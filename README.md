@@ -14,6 +14,7 @@ Running BioImaging Analysis on Milton
 
 
 ### First things first
+=================================
 This tool is for analysing microscopy images that have been extracted to TIF. If the images are in other format, try converting file format or use another workflow.
 
 ### Getting started
