@@ -20,7 +20,7 @@ This tool is for analysing microscopy images that have been extracted to TIF. If
 ### Getting started
 If you have not cloned this .git repository to your local directory
 ```
-git clone https://github.cpm/tinaashen/hpcBioImages
+git clone https://github.com/tinaashen/hpcBioImages
 cd hpcBioImages
 ```
 ### Setting up environment
