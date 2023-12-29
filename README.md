@@ -42,5 +42,3 @@ sbatch ./run_image_analysis.sh example_cells_1.tif
 ls 
 cat <job_id>.out
 ```
-
-hi
