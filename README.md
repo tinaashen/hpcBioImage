@@ -30,7 +30,9 @@ module load miniconda3
 conda env create -f myenv.yaml
 conda activate myenv 
 ```
-If you have previously used conda on milton, and have an environment set up, just activate the environment again by
+If you have previously used conda on milton, and have an environment set up, you will face an error as such:
+![image](https://github.com/tinaashen/hpcBioImages/assets/106832655/49417d17-5f12-4a86-a056-661678d2da7b)
+If so, reactivate the environment if you are running the same program again.
 ```
 module load miniconda3
 conda activate myenv
